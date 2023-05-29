@@ -14,6 +14,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="10dp"
+        android:onClick="actionCE"
         android:text="CE"
         app:layout_constraintBottom_toTopOf="@+id/btnC"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +29,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:text="."
+        android:onClick="actionChiffres"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn7" />
@@ -66,6 +68,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:text="*"
+        android:onClick="actionMultiplication"
         app:layout_constraintEnd_toStartOf="@+id/btnC"
         app:layout_constraintStart_toEndOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/btnSubtraction" />
@@ -78,6 +81,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:text="/"
+        android:onClick="actionDivision"
         app:layout_constraintEnd_toStartOf="@+id/btnC"
         app:layout_constraintStart_toEndOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/btnMultiplication" />
@@ -167,6 +171,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:text="-"
+        android:onClick="actionSoustraction"
         app:layout_constraintEnd_toStartOf="@+id/btnC"
         app:layout_constraintStart_toEndOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/btnAdiction" />
@@ -210,6 +215,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:text="+"
+        android:onClick="actionAdition"
         app:layout_constraintBottom_toTopOf="@+id/btnSubtraction"
         app:layout_constraintEnd_toStartOf="@+id/btnC"
         app:layout_constraintStart_toEndOf="@+id/btn3"
@@ -237,7 +243,29 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
+
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAfficherResultat"
+        android:layout_width="350dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="10dp"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -249,6 +277,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="17dp"
         android:text="C"
+        android:onClick="actionC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnAdiction"
         app:layout_constraintTop_toBottomOf="@+id/btnCE" />
@@ -262,6 +291,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="346dp"
         android:text="="
+        android:onClick="actionEgal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
